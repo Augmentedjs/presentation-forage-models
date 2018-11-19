@@ -1,0 +1,57 @@
+{
+  "name": "presentation-forage-models",
+  "version": "2.0.0",
+  "description": "The Augmented.js Next - Presentation LocalForage Models.",
+  "main": "dist/presentation-forage-models.js",
+  "scripts": {
+    "dev": "webpack --mode development --module-bind js=babel-loader --progress",
+    "build": "webpack --mode production --module-bind js=babel-loader --progress",
+    "lint": "eslint ./src/presentation-forage-models.js",
+    "test": "mocha --require babel-core/register --require test/helper.js -c test/*Spec.js",
+    "start": "node index.js",
+    "docs": "rm -rf jsdoc && jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json -P ./package.json",
+    "readme": "./node_modules/documentation/bin/documentation.js readme ./src/index.js -f md --section=API",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augmentedjs/presentation-forage-models.git"
+  },
+  "keywords": [
+    "augmentedjs",
+    "presentation"
+  ],
+  "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "eslint": "^3.2.2",
+    "eslint-config-kentcdodds": "^9.0.2",
+    "foodoc": "0.0.9",
+    "jsdoc": "^3.5.5",
+    "jsdom": "^11.12.0",
+    "mocha": "^4.1.0",
+    "mocha-jsdom": "^1.2.0",
+    "node-localstorage": "^1.3.1",
+    "sinon": "^4.5.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "documentation": "^8.1.2"
+  },
+  "dependencies": {
+    "localforage": "^1.7.3",
+    "next-core-model": "^2.5.5"
+  },
+  "bugs": {
+    "url": "https://github.com/Augmentedjs/presentation-forage-models/issues"
+  },
+  "homepage": "http://www.augmentedjs.com"
+}

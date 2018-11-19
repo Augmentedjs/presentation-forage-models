@@ -1,0 +1,32 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "systemSummary": "Augmented.js Next Presentation - Simply Development.",
+    "systemColor": "#607D8B",
+    "systemLogo": "public/images/jensen-silo-circle-small.png",
+    "logoFile": "public/images/jensen-silo-circle-small.png",
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "dateFormat": "ddd MMM Do YYYY",
+    "outputSourceFiles": true,
+    "outputSourcePath": true,
+    "systemName": "Augmented.js Next Presentation",
+    "footer": "<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>",
+    "copyright": "",
+    "navType": "vertical",
+    "linenums": true,
+    "collapseSymbols": false,
+    "inverseNav": true,
+    "protocol": "html://",
+    "methodHeadingReturns": false,
+    "favicon": "public/images/favicon-32x32.png",
+    "showTableOfContents": true
+  },
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": true
+  }
+}
