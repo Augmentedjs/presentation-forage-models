@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>LocalForage</title>
+		<title>LocalForageModel</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -95,7 +95,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">LocalForage</span></h1>
+				<h1><span class="name">LocalForageModel</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -104,20 +104,27 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">LocalForage</li>
+							<li class="active">LocalForageModel</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">LocalForage</span><span class="signature-params">()</span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">LocalForageModel</span><span class="signature-params">()</span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>LocalForage API</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Model</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
+							<!-- augments -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Augments</label>
+								<div class="col-sm-9">
+										<p class="form-control-static">Augmented.AbstractModel</p>
+								</div>
+							</div>
 			
 			
 			
@@ -134,7 +141,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-6">line 6</a></p>
+									<p class="form-control-static"><a href="localForageModel.js.html">localForageModel.js</a>, <a href="localForageModel.js.html#line-9">line 9</a></p>
 								</div>
 							</div>
 			
@@ -150,11 +157,11 @@
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="getItem" class="function public"><span class="name">getItem</span><span class="signature-params">( <span class="signature-param">key</span>&nbsp;)</span></h4>
+			<h4 id="fetch" class="function public"><span class="name">fetch</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Gets an item from storage</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Fetch the model</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -167,83 +174,10 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>key</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>The key in storage</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">object</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>Returns object from storage</p></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-24">line 24</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="setItem" class="function public"><span class="name">setItem</span><span class="signature-params">( <span class="signature-param">key</span>, <span class="signature-param">object</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sets an item to storage</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>key</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>The key in storage</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>object</code></td>
+								<td><code>options</code></td>
 							<td><span class="param-type">object</span></td>
 							<td class="last">
-									<p>The data to set</p>
+									<p>Any options to pass</p>
 							</td>
 						</tr>
 					</tbody>
@@ -269,7 +203,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-45">line 45</a></p>
+									<p class="form-control-static"><a href="localForageModel.js.html">localForageModel.js</a>, <a href="localForageModel.js.html#line-66">line 66</a></p>
 								</div>
 							</div>
 			
@@ -281,11 +215,11 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="removeItem" class="function public"><span class="name">removeItem</span><span class="signature-params">( <span class="signature-param">key</span>&nbsp;)</span></h4>
+			<h4 id="save" class="function public"><span class="name">save</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Removes an item from storage</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Save the model</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -298,10 +232,10 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>key</code></td>
-							<td><span class="param-type">string</span></td>
+								<td><code>options</code></td>
+							<td><span class="param-type">object</span></td>
 							<td class="last">
-									<p>The key in storage</p>
+									<p>Any options to pass</p>
 							</td>
 						</tr>
 					</tbody>
@@ -327,7 +261,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-62">line 62</a></p>
+									<p class="form-control-static"><a href="localForageModel.js.html">localForageModel.js</a>, <a href="localForageModel.js.html#line-73">line 73</a></p>
 								</div>
 							</div>
 			
@@ -339,48 +273,11 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="clear" class="function public"><span class="name">clear</span><span class="signature-params">()</span></h4>
+			<h4 id="update" class="function public"><span class="name">update</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Clears storage</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-79">line 79</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="key" class="function public"><span class="name">key</span><span class="signature-params">( <span class="signature-param">i</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Gets the key from storage for index</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Update the model</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -393,24 +290,16 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>i</code></td>
-							<td><span class="param-type">number</span></td>
+								<td><code>options</code></td>
+							<td><span class="param-type">object</span></td>
 							<td class="last">
-									<p>The index in storage</p>
+									<p>Any options to pass</p>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">string</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>Returns the key from storage</p></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -430,7 +319,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-98">line 98</a></p>
+									<p class="form-control-static"><a href="localForageModel.js.html">localForageModel.js</a>, <a href="localForageModel.js.html#line-80">line 80</a></p>
 								</div>
 							</div>
 			
@@ -442,20 +331,33 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public">
-			<h4 id="keys" class="function public"><span class="name">keys</span><span class="signature-params">()</span></h4>
+			<h4 id="destroy" class="function public"><span class="name">destroy</span><span class="signature-params">( <span class="signature-param">options</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Gets the keya from storage</p></div>
-			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">array</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>Returns the keys from storage</p></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Destroy the model</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>options</code></td>
+							<td><span class="param-type">object</span></td>
+							<td class="last">
+									<p>Any options to pass</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -475,97 +377,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-116">line 116</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="length" class="function public"><span class="name">length</span><span class="signature-params">()</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The length of storage by keys</p></div>
-			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">number</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>Returns the length of storage by keys</p></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-133">line 133</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="isSupported" class="function public"><span class="name">isSupported</span><span class="signature-params">()</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Is storage supported</p></div>
-			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>Returns true if supported</p></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="localForage.js.html">localForage.js</a>, <a href="localForage.js.html#line-15">line 15</a></p>
+									<p class="form-control-static"><a href="localForageModel.js.html">localForageModel.js</a>, <a href="localForageModel.js.html#line-87">line 87</a></p>
 								</div>
 							</div>
 			

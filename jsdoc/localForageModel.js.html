@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>localForageCollection.js</title>
+		<title>localForageModel.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -96,7 +96,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">source</span>
-				<h1><span class="name">localForageCollection.js</span></h1>
+				<h1><span class="name">localForageModel.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -104,20 +104,20 @@
 			<div class="col-md-12 main-content">
 		<section class="source-section">
 			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { AbstractCollection } from "next-core-model";
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import { AbstractModel } from "next-core-model";
 import LocalForage from "./localforage.js";
 import { DEFAULT_KEY } from "./defaults.js";
 
 /**
- * LocalForageCollection
- * @extends AbstractCollection
+ * Model
+ * @extends Augmented.AbstractModel
  */
-class LocalForageCollection extends AbstractCollection {
-  constructor(models, options) {
+class LocalForageModel extends AbstractModel {
+  constructor(attributes, options, ...args) {
     if (!options) {
       options = {};
     }
-    super(models, options);
+    super(attributes, options, args);
 
     if (options.key) {
       this._key = options.key;
@@ -132,60 +132,8 @@ class LocalForageCollection extends AbstractCollection {
   };
 
   /**
-   * Base key name for the collection (simular to url for rest-based)
-   * @property {string} key The key
-   */
-   get key() {
-     return this._key;
-   };
-
-  /**
-   * Storage for the collection
-   * @property {string} storage The storage used for the collection
-   * @private
-   */
-
-  /**
-   * Initialize the model with needed wireing
-   * @param {object} options Any options to pass
-   */
-  initialize(options) {};
-  /**
-   * Custom init method for the model (called at inititlize)
-   * @param {object} options Any options to pass
-   */
-  init(options) {};
-  /**
-   * Fetch the collection
-   * @param {object} options Any options to pass
-   */
-  async fetch(options) {
-    return await this.sync("read", this, options);
-  };
-  /**
-   * Save the collection
-   * @param {object} options Any options to pass
-   */
-  async save(options) {
-    return await this.sync("create", this, options);
-  };
-  /**
-   * Update the collection
-   * @param {object} options Any options to pass
-   */
-  async update(options) {
-    return await this.sync("update", this, options);
-  };
-  /**
-   * Destroy the collection
-   * @param {object} options Any options to pass
-   */
-  async destroy(options) {
-    return await this.sync("delete", this, options);
-  };
-
-  /**
-   * Sync method for Collection
+   * sync - Sync model data to bound localforage
+   * @method sync
    */
   async sync(method, model, options) {
     let j = {};
@@ -204,7 +152,7 @@ class LocalForageCollection extends AbstractCollection {
         j = await this._storage.getItem(this._key);
         console.debug(`getItem return ${j}`);
         if (j) {
-          await console.debug("collection get", j);
+          await console.debug("model get", j);
           await this.reset(j);
         } else {
           console.warn("no data returned");
@@ -216,9 +164,38 @@ class LocalForageCollection extends AbstractCollection {
     }
     return j;
   };
+
+  /**
+   * Fetch the model
+   * @param {object} options Any options to pass
+   */
+  fetch(options) {
+    return this.sync("read", this, options);
+  };
+  /**
+   * Save the model
+   * @param {object} options Any options to pass
+   */
+  save(options) {
+    return this.sync("create", this, options);
+  };
+  /**
+   * Update the model
+   * @param {object} options Any options to pass
+   */
+  update(options) {
+    return this.sync("update", this, options);
+  };
+  /**
+   * Destroy the model
+   * @param {object} options Any options to pass
+   */
+  destroy(options) {
+    return this.sync("delete", this, options);
+  };
 };
 
-export default LocalForageCollection;
+export default LocalForageModel;
 </code></pre>
 		</section>
 			</div>

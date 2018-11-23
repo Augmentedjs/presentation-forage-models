@@ -1,7 +1,6 @@
 import { AbstractCollection } from "next-core-model";
 import LocalForage from "./localforage.js";
-
-const DEFAULT_KEY = "forage";
+import { DEFAULT_KEY } from "./defaults.js";
 
 /**
  * LocalForageCollection

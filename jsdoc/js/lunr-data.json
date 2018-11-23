@@ -178,6 +178,14 @@
           "option",
           "save"
         ],
+        "LocalForageCollection.html#update": [
+          "collect",
+          "function",
+          "localforagecollection#upd",
+          "lt;async&gt",
+          "option",
+          "updat"
+        ],
         "LocalForageCollection.html#destroy": [
           "collect",
           "destroy",
@@ -194,16 +202,41 @@
           "method",
           "sync"
         ],
-        "LocalForageCollection.html#update": [
-          "collect",
+        "LocalForageModel.html": [
+          "class",
+          "localforagemodel",
+          "model"
+        ],
+        "LocalForageModel.html#fetch": [
+          "fetch",
           "function",
-          "localforagecollection#upd",
-          "lt;async&gt",
+          "localforagemodel#fetch",
+          "model",
+          "option"
+        ],
+        "LocalForageModel.html#save": [
+          "function",
+          "localforagemodel#sav",
+          "model",
+          "option",
+          "save"
+        ],
+        "LocalForageModel.html#update": [
+          "function",
+          "localforagemodel#upd",
+          "model",
           "option",
           "updat"
+        ],
+        "LocalForageModel.html#destroy": [
+          "destroy",
+          "function",
+          "localforagemodel#destroy",
+          "model",
+          "option"
         ]
       },
-      "length": 21
+      "length": 26
     },
     "tokenStore": {
       "root": {
@@ -294,6 +327,10 @@
                         "LocalForageCollection.html#destroy": {
                           "ref": "LocalForageCollection.html#destroy",
                           "tf": 708.3333333333334
+                        },
+                        "LocalForageModel.html#destroy": {
+                          "ref": "LocalForageModel.html#destroy",
+                          "tf": 725
                         }
                       }
                     }
@@ -718,6 +755,10 @@
                   "LocalForageCollection.html#save": {
                     "ref": "LocalForageCollection.html#save",
                     "tf": 708.3333333333334
+                  },
+                  "LocalForageModel.html#save": {
+                    "ref": "LocalForageModel.html#save",
+                    "tf": 725
                   }
                 }
               }
@@ -818,6 +859,10 @@
                     "LocalForageCollection.html": {
                       "ref": "LocalForageCollection.html",
                       "tf": 110
+                    },
+                    "LocalForageModel.html": {
+                      "ref": "LocalForageModel.html",
+                      "tf": 110
                     }
                   }
                 }
@@ -862,6 +907,10 @@
                           "ref": "LocalForageCollection.html#save",
                           "tf": 25
                         },
+                        "LocalForageCollection.html#update": {
+                          "ref": "LocalForageCollection.html#update",
+                          "tf": 25
+                        },
                         "LocalForageCollection.html#destroy": {
                           "ref": "LocalForageCollection.html#destroy",
                           "tf": 25
@@ -869,10 +918,6 @@
                         "LocalForageCollection.html#sync": {
                           "ref": "LocalForageCollection.html#sync",
                           "tf": 16.666666666666664
-                        },
-                        "LocalForageCollection.html#update": {
-                          "ref": "LocalForageCollection.html#update",
-                          "tf": 25
                         }
                       }
                     }
@@ -1277,6 +1322,20 @@
                                                         }
                                                       }
                                                     },
+                                                    "u": {
+                                                      "docs": {},
+                                                      "p": {
+                                                        "docs": {},
+                                                        "d": {
+                                                          "docs": {
+                                                            "LocalForageCollection.html#update": {
+                                                              "ref": "LocalForageCollection.html#update",
+                                                              "tf": 1150
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
                                                     "d": {
                                                       "docs": {},
                                                       "e": {
@@ -1302,17 +1361,100 @@
                                                           }
                                                         }
                                                       }
-                                                    },
-                                                    "u": {
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "m": {
+                                "docs": {},
+                                "o": {
+                                  "docs": {},
+                                  "d": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "l": {
+                                        "docs": {
+                                          "LocalForageModel.html": {
+                                            "ref": "LocalForageModel.html",
+                                            "tf": 1900
+                                          }
+                                        },
+                                        "#": {
+                                          "docs": {},
+                                          "f": {
+                                            "docs": {},
+                                            "e": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {},
+                                                "c": {
+                                                  "docs": {},
+                                                  "h": {
+                                                    "docs": {
+                                                      "LocalForageModel.html#fetch": {
+                                                        "ref": "LocalForageModel.html#fetch",
+                                                        "tf": 1150
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "s": {
+                                            "docs": {},
+                                            "a": {
+                                              "docs": {},
+                                              "v": {
+                                                "docs": {
+                                                  "LocalForageModel.html#save": {
+                                                    "ref": "LocalForageModel.html#save",
+                                                    "tf": 1150
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "u": {
+                                            "docs": {},
+                                            "p": {
+                                              "docs": {},
+                                              "d": {
+                                                "docs": {
+                                                  "LocalForageModel.html#update": {
+                                                    "ref": "LocalForageModel.html#update",
+                                                    "tf": 1150
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "d": {
+                                            "docs": {},
+                                            "e": {
+                                              "docs": {},
+                                              "s": {
+                                                "docs": {},
+                                                "t": {
+                                                  "docs": {},
+                                                  "r": {
+                                                    "docs": {},
+                                                    "o": {
                                                       "docs": {},
-                                                      "p": {
-                                                        "docs": {},
-                                                        "d": {
-                                                          "docs": {
-                                                            "LocalForageCollection.html#update": {
-                                                              "ref": "LocalForageCollection.html#update",
-                                                              "tf": 1150
-                                                            }
+                                                      "y": {
+                                                        "docs": {
+                                                          "LocalForageModel.html#destroy": {
+                                                            "ref": "LocalForageModel.html#destroy",
+                                                            "tf": 1150
                                                           }
                                                         }
                                                       }
@@ -1386,6 +1528,10 @@
                                   "ref": "LocalForageCollection.html#save",
                                   "tf": 33.33333333333333
                                 },
+                                "LocalForageCollection.html#update": {
+                                  "ref": "LocalForageCollection.html#update",
+                                  "tf": 33.33333333333333
+                                },
                                 "LocalForageCollection.html#destroy": {
                                   "ref": "LocalForageCollection.html#destroy",
                                   "tf": 33.33333333333333
@@ -1393,10 +1539,6 @@
                                 "LocalForageCollection.html#sync": {
                                   "ref": "LocalForageCollection.html#sync",
                                   "tf": 50
-                                },
-                                "LocalForageCollection.html#update": {
-                                  "ref": "LocalForageCollection.html#update",
-                                  "tf": 33.33333333333333
                                 }
                               }
                             }
@@ -1474,6 +1616,10 @@
                             "ref": "LocalForageCollection.html#save",
                             "tf": 110
                           },
+                          "LocalForageCollection.html#update": {
+                            "ref": "LocalForageCollection.html#update",
+                            "tf": 110
+                          },
                           "LocalForageCollection.html#destroy": {
                             "ref": "LocalForageCollection.html#destroy",
                             "tf": 110
@@ -1482,8 +1628,20 @@
                             "ref": "LocalForageCollection.html#sync",
                             "tf": 110
                           },
-                          "LocalForageCollection.html#update": {
-                            "ref": "LocalForageCollection.html#update",
+                          "LocalForageModel.html#fetch": {
+                            "ref": "LocalForageModel.html#fetch",
+                            "tf": 110
+                          },
+                          "LocalForageModel.html#save": {
+                            "ref": "LocalForageModel.html#save",
+                            "tf": 110
+                          },
+                          "LocalForageModel.html#update": {
+                            "ref": "LocalForageModel.html#update",
+                            "tf": 110
+                          },
+                          "LocalForageModel.html#destroy": {
+                            "ref": "LocalForageModel.html#destroy",
                             "tf": 110
                           }
                         }
@@ -1505,6 +1663,10 @@
                     "LocalForageCollection.html#fetch": {
                       "ref": "LocalForageCollection.html#fetch",
                       "tf": 708.3333333333334
+                    },
+                    "LocalForageModel.html#fetch": {
+                      "ref": "LocalForageModel.html#fetch",
+                      "tf": 725
                     }
                   }
                 }
@@ -1606,13 +1768,29 @@
                         "ref": "LocalForageCollection.html#save",
                         "tf": 33.33333333333333
                       },
+                      "LocalForageCollection.html#update": {
+                        "ref": "LocalForageCollection.html#update",
+                        "tf": 33.33333333333333
+                      },
                       "LocalForageCollection.html#destroy": {
                         "ref": "LocalForageCollection.html#destroy",
                         "tf": 33.33333333333333
                       },
-                      "LocalForageCollection.html#update": {
-                        "ref": "LocalForageCollection.html#update",
-                        "tf": 33.33333333333333
+                      "LocalForageModel.html#fetch": {
+                        "ref": "LocalForageModel.html#fetch",
+                        "tf": 50
+                      },
+                      "LocalForageModel.html#save": {
+                        "ref": "LocalForageModel.html#save",
+                        "tf": 50
+                      },
+                      "LocalForageModel.html#update": {
+                        "ref": "LocalForageModel.html#update",
+                        "tf": 50
+                      },
+                      "LocalForageModel.html#destroy": {
+                        "ref": "LocalForageModel.html#destroy",
+                        "tf": 50
                       }
                     }
                   }
@@ -1696,6 +1874,26 @@
                     "LocalForageCollection.html#init": {
                       "ref": "LocalForageCollection.html#init",
                       "tf": 8.333333333333332
+                    },
+                    "LocalForageModel.html": {
+                      "ref": "LocalForageModel.html",
+                      "tf": 50
+                    },
+                    "LocalForageModel.html#fetch": {
+                      "ref": "LocalForageModel.html#fetch",
+                      "tf": 25
+                    },
+                    "LocalForageModel.html#save": {
+                      "ref": "LocalForageModel.html#save",
+                      "tf": 25
+                    },
+                    "LocalForageModel.html#update": {
+                      "ref": "LocalForageModel.html#update",
+                      "tf": 25
+                    },
+                    "LocalForageModel.html#destroy": {
+                      "ref": "LocalForageModel.html#destroy",
+                      "tf": 25
                     }
                   }
                 }
@@ -1727,6 +1925,10 @@
                     "LocalForageCollection.html#update": {
                       "ref": "LocalForageCollection.html#update",
                       "tf": 708.3333333333334
+                    },
+                    "LocalForageModel.html#update": {
+                      "ref": "LocalForageModel.html#update",
+                      "tf": 725
                     }
                   }
                 }
@@ -1752,7 +1954,7 @@
           }
         }
       },
-      "length": 121
+      "length": 144
     },
     "corpusTokens": [
       "api",
@@ -1799,6 +2001,11 @@
       "localforagecollection#sav",
       "localforagecollection#sync",
       "localforagecollection#upd",
+      "localforagemodel",
+      "localforagemodel#destroy",
+      "localforagemodel#fetch",
+      "localforagemodel#sav",
+      "localforagemodel#upd",
       "lt;async&gt",
       "member",
       "method",
@@ -2017,6 +2224,16 @@
       "summary": "",
       "description": "Save the collection"
     },
+    "LocalForageCollection.html#update": {
+      "id": "LocalForageCollection.html#update",
+      "kind": "function",
+      "title": "&lt;async&gt; update( options )",
+      "longname": "LocalForageCollection#update",
+      "name": "update",
+      "tags": "LocalForageCollection#update update",
+      "summary": "",
+      "description": "Update the collection"
+    },
     "LocalForageCollection.html#destroy": {
       "id": "LocalForageCollection.html#destroy",
       "kind": "function",
@@ -2037,15 +2254,56 @@
       "summary": "",
       "description": "Sync method for Collection"
     },
-    "LocalForageCollection.html#update": {
-      "id": "LocalForageCollection.html#update",
-      "kind": "function",
-      "title": "&lt;async&gt; update( options )",
-      "longname": "LocalForageCollection#update",
-      "name": "update",
-      "tags": "LocalForageCollection#update update",
+    "LocalForageModel.html": {
+      "id": "LocalForageModel.html",
+      "kind": "class",
+      "title": "LocalForageModel",
+      "longname": "LocalForageModel",
+      "name": "LocalForageModel",
+      "tags": "LocalForageModel",
       "summary": "",
-      "description": "Update the collection"
+      "description": "Model",
+      "body": ""
+    },
+    "LocalForageModel.html#fetch": {
+      "id": "LocalForageModel.html#fetch",
+      "kind": "function",
+      "title": "fetch( options )",
+      "longname": "LocalForageModel#fetch",
+      "name": "fetch",
+      "tags": "LocalForageModel#fetch fetch",
+      "summary": "",
+      "description": "Fetch the model"
+    },
+    "LocalForageModel.html#save": {
+      "id": "LocalForageModel.html#save",
+      "kind": "function",
+      "title": "save( options )",
+      "longname": "LocalForageModel#save",
+      "name": "save",
+      "tags": "LocalForageModel#save save",
+      "summary": "",
+      "description": "Save the model"
+    },
+    "LocalForageModel.html#update": {
+      "id": "LocalForageModel.html#update",
+      "kind": "function",
+      "title": "update( options )",
+      "longname": "LocalForageModel#update",
+      "name": "update",
+      "tags": "LocalForageModel#update update",
+      "summary": "",
+      "description": "Update the model"
+    },
+    "LocalForageModel.html#destroy": {
+      "id": "LocalForageModel.html#destroy",
+      "kind": "function",
+      "title": "destroy( options )",
+      "longname": "LocalForageModel#destroy",
+      "name": "destroy",
+      "tags": "LocalForageModel#destroy destroy",
+      "summary": "",
+      "description": "Destroy the model"
     }
   }
 }
