@@ -96,9 +96,9 @@ class LocalForageCollection extends AbstractCollection {
       } else {
         // read
         j = await this._storage.getItem(this._key);
-        console.debug(`getItem return ${j}`);
+        //console.debug(`getItem return ${j}`);
         if (j) {
-          await console.debug("collection get", j);
+          //await console.debug("collection get", j);
           await this.reset(j);
         } else {
           console.warn("no data returned");
