@@ -115,7 +115,7 @@ class LocalForage {
    */
   keys() {
     return this._myStore.keys()
-    .then(function(keys) {
+    .then((keys) => {
       // An array of all the key names.
       return keys;
     })
