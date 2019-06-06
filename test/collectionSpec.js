@@ -26,32 +26,31 @@ const schema = {
     "required": ["ID", "Name"]
 };
 
-describe('Given an Augmented Collection Backed by LocalForage', () => {
+describe("Given an Augmented Collection Backed by LocalForage", () => {
   let c;
 
   beforeEach(() => {
     c = new Models.LocalForageCollection();
   });
 
-  afterEach(() => {
-    c.destroy();
+  afterEach( async () => {
+    await c.destroy();
     c = null;
   });
 
-  it('has an augmented local forage Collection', () => {
+  it("has an augmented local forage Collection", () => {
     expect(Models.LocalForageCollection).to.not.be.undefined;
   });
 
-  it('can populate data', () => {
-    c.add(data);
+  it("can populate data", async () => {
+    await c.add(data);
     expect(c.size()).to.equal(5);
   });
 
-  it('can save and fetch data', () => {
-    c.add(data);
-    c.save();
-
-    c.fetch();
+  it("can save and fetch data", async () => {
+    await c.add(data);
+    await c.save();
+    await c.fetch();
     expect(c.size()).to.equal(5);
   });
 });

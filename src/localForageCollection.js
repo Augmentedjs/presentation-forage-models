@@ -21,7 +21,11 @@ class LocalForageCollection extends AbstractCollection {
     if (options.storage) {
       this._storage = options.storage;
     } else {
-      this._storage = new LocalForage();
+      if (options.config) {
+        this._storage = new LocalForage(options.config);
+      } else {
+        this._storage = new LocalForage();
+      }
     }
   };
 

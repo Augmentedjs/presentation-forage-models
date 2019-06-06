@@ -2,9 +2,14 @@ import * as localforage from "localforage";
 
 /**
  * LocalForage API
+ * @param {Object} config Config the base storage library
+ * @see {@link https://localforage.github.io/localForage/#settings-api-config|LocalForage Config}
  */
 class LocalForage {
-  constructor() {
+  constructor(config) {
+    if (config) {
+      localforage.config(config);
+    }
     this._myStore = localforage;
   };
 
