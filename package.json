@@ -1,6 +1,6 @@
 {
   "name": "presentation-forage-models",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "The Augmented.js Next - Presentation LocalForage Models.",
   "main": "dist/presentation-forage-models.js",
   "scripts": {

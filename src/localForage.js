@@ -1,4 +1,4 @@
-import * as localforage from "localforage";
+import { default as localforage } from "localforage";
 
 /**
  * LocalForage API
@@ -8,7 +8,7 @@ import * as localforage from "localforage";
 class LocalForage {
   constructor(config) {
     if (config) {
-      localforage.config(config);
+      localforage.createInstance(config);
     }
     this._myStore = localforage;
   };
