@@ -63,6 +63,13 @@ window.lunrData = {
           "class",
           "localforag"
         ],
+        "LocalForage.html#isSupported": [
+          "function",
+          "issupport",
+          "localforage#issupport",
+          "storag",
+          "support"
+        ],
         "LocalForage.html#getItem": [
           "function",
           "get",
@@ -119,13 +126,6 @@ window.lunrData = {
           "length",
           "localforage#length",
           "storag"
-        ],
-        "LocalForage.html#isSupported": [
-          "function",
-          "issupport",
-          "localforage#issupport",
-          "storag",
-          "support"
         ],
         "LocalForageCollection.html": [
           "class",
@@ -423,28 +423,6 @@ window.lunrData = {
               }
             }
           },
-          "t": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "m": {
-                "docs": {
-                  "LocalForage.html#getItem": {
-                    "ref": "LocalForage.html#getItem",
-                    "tf": 16.666666666666664
-                  },
-                  "LocalForage.html#setItem": {
-                    "ref": "LocalForage.html#setItem",
-                    "tf": 16.666666666666664
-                  },
-                  "LocalForage.html#removeItem": {
-                    "ref": "LocalForage.html#removeItem",
-                    "tf": 16.666666666666664
-                  }
-                }
-              }
-            }
-          },
           "s": {
             "docs": {},
             "s": {
@@ -469,6 +447,28 @@ window.lunrData = {
                         }
                       }
                     }
+                  }
+                }
+              }
+            }
+          },
+          "t": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "m": {
+                "docs": {
+                  "LocalForage.html#getItem": {
+                    "ref": "LocalForage.html#getItem",
+                    "tf": 16.666666666666664
+                  },
+                  "LocalForage.html#setItem": {
+                    "ref": "LocalForage.html#setItem",
+                    "tf": 16.666666666666664
+                  },
+                  "LocalForage.html#removeItem": {
+                    "ref": "LocalForage.html#removeItem",
+                    "tf": 16.666666666666664
                   }
                 }
               }
@@ -657,6 +657,10 @@ window.lunrData = {
                   "docs": {},
                   "g": {
                     "docs": {
+                      "LocalForage.html#isSupported": {
+                        "ref": "LocalForage.html#isSupported",
+                        "tf": 25
+                      },
                       "LocalForage.html#getItem": {
                         "ref": "LocalForage.html#getItem",
                         "tf": 16.666666666666664
@@ -684,10 +688,29 @@ window.lunrData = {
                       "LocalForage.html#length": {
                         "ref": "LocalForage.html#length",
                         "tf": 16.666666666666664
-                      },
-                      "LocalForage.html#isSupported": {
-                        "ref": "LocalForage.html#isSupported",
-                        "tf": 25
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "LocalForage.html#isSupported": {
+                          "ref": "LocalForage.html#isSupported",
+                          "tf": 25
+                        }
                       }
                     }
                   }
@@ -715,29 +738,6 @@ window.lunrData = {
                         "LocalForage.html#setItem": {
                           "ref": "LocalForage.html#setItem",
                           "tf": 683.3333333333334
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "u": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "LocalForage.html#isSupported": {
-                          "ref": "LocalForage.html#isSupported",
-                          "tf": 25
                         }
                       }
                     }
@@ -1027,6 +1027,38 @@ window.lunrData = {
                               "docs": {},
                               "#": {
                                 "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "s": {
+                                    "docs": {},
+                                    "s": {
+                                      "docs": {},
+                                      "u": {
+                                        "docs": {},
+                                        "p": {
+                                          "docs": {},
+                                          "p": {
+                                            "docs": {},
+                                            "o": {
+                                              "docs": {},
+                                              "r": {
+                                                "docs": {},
+                                                "t": {
+                                                  "docs": {
+                                                    "LocalForage.html#isSupported": {
+                                                      "ref": "LocalForage.html#isSupported",
+                                                      "tf": 1150
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
                                 "g": {
                                   "docs": {},
                                   "e": {
@@ -1167,38 +1199,6 @@ window.lunrData = {
                                               "LocalForage.html#length": {
                                                 "ref": "LocalForage.html#length",
                                                 "tf": 1150
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "i": {
-                                  "docs": {},
-                                  "s": {
-                                    "docs": {},
-                                    "s": {
-                                      "docs": {},
-                                      "u": {
-                                        "docs": {},
-                                        "p": {
-                                          "docs": {},
-                                          "p": {
-                                            "docs": {},
-                                            "o": {
-                                              "docs": {},
-                                              "r": {
-                                                "docs": {},
-                                                "t": {
-                                                  "docs": {
-                                                    "LocalForage.html#isSupported": {
-                                                      "ref": "LocalForage.html#isSupported",
-                                                      "tf": 1150
-                                                    }
-                                                  }
-                                                }
                                               }
                                             }
                                           }
@@ -1568,6 +1568,10 @@ window.lunrData = {
                       "docs": {},
                       "n": {
                         "docs": {
+                          "LocalForage.html#isSupported": {
+                            "ref": "LocalForage.html#isSupported",
+                            "tf": 110
+                          },
                           "LocalForage.html#getItem": {
                             "ref": "LocalForage.html#getItem",
                             "tf": 110
@@ -1594,10 +1598,6 @@ window.lunrData = {
                           },
                           "LocalForage.html#length": {
                             "ref": "LocalForage.html#length",
-                            "tf": 110
-                          },
-                          "LocalForage.html#isSupported": {
-                            "ref": "LocalForage.html#isSupported",
                             "tf": 110
                           },
                           "LocalForageCollection.html#initialize": {
@@ -2083,6 +2083,16 @@ window.lunrData = {
       "description": "LocalForage API",
       "body": ""
     },
+    "LocalForage.html#isSupported": {
+      "id": "LocalForage.html#isSupported",
+      "kind": "function",
+      "title": "isSupported()",
+      "longname": "LocalForage#isSupported",
+      "name": "isSupported",
+      "tags": "LocalForage#isSupported isSupported",
+      "summary": "",
+      "description": "Is storage supported"
+    },
     "LocalForage.html#getItem": {
       "id": "LocalForage.html#getItem",
       "kind": "function",
@@ -2152,16 +2162,6 @@ window.lunrData = {
       "tags": "LocalForage#length length",
       "summary": "",
       "description": "The length of storage by keys"
-    },
-    "LocalForage.html#isSupported": {
-      "id": "LocalForage.html#isSupported",
-      "kind": "function",
-      "title": "isSupported()",
-      "longname": "LocalForage#isSupported",
-      "name": "isSupported",
-      "tags": "LocalForage#isSupported isSupported",
-      "summary": "",
-      "description": "Is storage supported"
     },
     "LocalForageCollection.html": {
       "id": "LocalForageCollection.html",
