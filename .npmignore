@@ -1,0 +1,13 @@
+# OS X
+.DS_Store
+src/*
+data
+test
+devserver.js
+webpackData.js
+webpack.config.js
+.babelrc
+jsdoc
+.babelrc
+jsdoc.config.json
+public

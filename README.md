@@ -179,7 +179,8 @@ sync - Sync model data to bound localforage
 
 ## LocalForage
 
--   **See: [LocalForage Config](https://localforage.github.io/localForage/#settings-api-config)**
+-   **See: [LocalForage Config](https://localforage.github.io/localForage/#settings-api-config)
+    **
 
 LocalForage API
 
