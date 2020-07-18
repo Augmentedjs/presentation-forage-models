@@ -4,7 +4,7 @@ import { DEFAULT_KEY } from "./defaults.js";
 
 /**
  * Model
- * @extends Augmented.AbstractModel
+ * @extends AbstractModel
  */
 class LocalForageModel extends AbstractModel {
   constructor(attributes, options, ...args) {
@@ -31,7 +31,6 @@ class LocalForageModel extends AbstractModel {
 
   /**
    * sync - Sync model data to bound localforage
-   * @method sync
    */
   sync(method) {
     if (method === "create" || method === "update") {

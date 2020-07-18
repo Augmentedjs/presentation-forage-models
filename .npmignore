@@ -9,5 +9,5 @@ webpack.config.js
 .babelrc
 jsdoc
 .babelrc
-jsdoc.config.json
+jsdoc.conf.json
 public
