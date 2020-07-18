@@ -7,10 +7,7 @@ import { DEFAULT_KEY } from "./defaults.js";
  * @extends AbstractModel
  */
 class LocalForageModel extends AbstractModel {
-  constructor(attributes, options, ...args) {
-    if (!options) {
-      options = {};
-    }
+  constructor(attributes, options = {}, ...args) {
     super(attributes, options, args);
 
     if (options.key) {

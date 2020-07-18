@@ -28,27 +28,28 @@ Augmented.js Presentation LocalForage Models
         -   [Parameters](#parameters-7)
 -   [LocalForageModel](#localforagemodel)
     -   [Parameters](#parameters-8)
-    -   [fetch](#fetch-1)
+    -   [sync](#sync-1)
         -   [Parameters](#parameters-9)
-    -   [save](#save-1)
+    -   [fetch](#fetch-1)
         -   [Parameters](#parameters-10)
-    -   [update](#update-1)
+    -   [save](#save-1)
         -   [Parameters](#parameters-11)
-    -   [destroy](#destroy-1)
+    -   [update](#update-1)
         -   [Parameters](#parameters-12)
--   [sync](#sync-1)
+    -   [destroy](#destroy-1)
+        -   [Parameters](#parameters-13)
 -   [LocalForage](#localforage)
-    -   [Parameters](#parameters-13)
+    -   [Parameters](#parameters-14)
     -   [isSupported](#issupported)
     -   [getItem](#getitem)
-        -   [Parameters](#parameters-14)
-    -   [setItem](#setitem)
         -   [Parameters](#parameters-15)
-    -   [removeItem](#removeitem)
+    -   [setItem](#setitem)
         -   [Parameters](#parameters-16)
+    -   [removeItem](#removeitem)
+        -   [Parameters](#parameters-17)
     -   [clear](#clear)
     -   [key](#key-1)
-        -   [Parameters](#parameters-17)
+        -   [Parameters](#parameters-18)
     -   [keys](#keys)
     -   [length](#length)
 
@@ -61,7 +62,7 @@ LocalForageCollection
 ### Parameters
 
 -   `models`  
--   `options`  
+-   `options`   (optional, default `{}`)
 
 ### key
 
@@ -131,15 +132,23 @@ Sync method for Collection
 
 ## LocalForageModel
 
-**Extends Augmented.AbstractModel**
+**Extends AbstractModel**
 
 Model
 
 ### Parameters
 
 -   `attributes`  
--   `options`  
+-   `options`   (optional, default `{}`)
 -   `args` **...any** 
+
+### sync
+
+sync - Sync model data to bound localforage
+
+#### Parameters
+
+-   `method`  
 
 ### fetch
 
@@ -172,10 +181,6 @@ Destroy the model
 #### Parameters
 
 -   `options` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** Any options to pass
-
-## sync
-
-sync - Sync model data to bound localforage
 
 ## LocalForage
 

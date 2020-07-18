@@ -207,6 +207,15 @@ window.lunrData = {
           "localforagemodel",
           "model"
         ],
+        "LocalForageModel.html#sync": [
+          "bound",
+          "data",
+          "function",
+          "localforag",
+          "localforagemodel#sync",
+          "model",
+          "sync"
+        ],
         "LocalForageModel.html#fetch": [
           "fetch",
           "function",
@@ -236,7 +245,7 @@ window.lunrData = {
           "option"
         ]
       },
-      "length": 26
+      "length": 27
     },
     "tokenStore": {
       "root": {
@@ -364,6 +373,20 @@ window.lunrData = {
                         }
                       }
                     }
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "a": {
+                "docs": {
+                  "LocalForageModel.html#sync": {
+                    "ref": "LocalForageModel.html#sync",
+                    "tf": 8.333333333333332
                   }
                 }
               }
@@ -773,6 +796,10 @@ window.lunrData = {
                   "LocalForageCollection.html#sync": {
                     "ref": "LocalForageCollection.html#sync",
                     "tf": 716.6666666666666
+                  },
+                  "LocalForageModel.html#sync": {
+                    "ref": "LocalForageModel.html#sync",
+                    "tf": 766.6666666666666
                   }
                 }
               }
@@ -1021,6 +1048,10 @@ window.lunrData = {
                               "LocalForage.html": {
                                 "ref": "LocalForage.html",
                                 "tf": 1925
+                              },
+                              "LocalForageModel.html#sync": {
+                                "ref": "LocalForageModel.html#sync",
+                                "tf": 8.333333333333332
                               }
                             },
                             "e": {
@@ -1390,6 +1421,34 @@ window.lunrData = {
                                         },
                                         "#": {
                                           "docs": {},
+                                          "s": {
+                                            "docs": {},
+                                            "y": {
+                                              "docs": {},
+                                              "n": {
+                                                "docs": {},
+                                                "c": {
+                                                  "docs": {
+                                                    "LocalForageModel.html#sync": {
+                                                      "ref": "LocalForageModel.html#sync",
+                                                      "tf": 1150
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "a": {
+                                              "docs": {},
+                                              "v": {
+                                                "docs": {
+                                                  "LocalForageModel.html#save": {
+                                                    "ref": "LocalForageModel.html#save",
+                                                    "tf": 1150
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
                                           "f": {
                                             "docs": {},
                                             "e": {
@@ -1405,20 +1464,6 @@ window.lunrData = {
                                                         "tf": 1150
                                                       }
                                                     }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "s": {
-                                            "docs": {},
-                                            "a": {
-                                              "docs": {},
-                                              "v": {
-                                                "docs": {
-                                                  "LocalForageModel.html#save": {
-                                                    "ref": "LocalForageModel.html#save",
-                                                    "tf": 1150
                                                   }
                                                 }
                                               }
@@ -1628,6 +1673,10 @@ window.lunrData = {
                             "ref": "LocalForageCollection.html#sync",
                             "tf": 110
                           },
+                          "LocalForageModel.html#sync": {
+                            "ref": "LocalForageModel.html#sync",
+                            "tf": 110
+                          },
                           "LocalForageModel.html#fetch": {
                             "ref": "LocalForageModel.html#fetch",
                             "tf": 110
@@ -1814,6 +1863,23 @@ window.lunrData = {
                 }
               }
             }
+          },
+          "o": {
+            "docs": {},
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "d": {
+                  "docs": {
+                    "LocalForageModel.html#sync": {
+                      "ref": "LocalForageModel.html#sync",
+                      "tf": 8.333333333333332
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "m": {
@@ -1878,6 +1944,10 @@ window.lunrData = {
                     "LocalForageModel.html": {
                       "ref": "LocalForageModel.html",
                       "tf": 50
+                    },
+                    "LocalForageModel.html#sync": {
+                      "ref": "LocalForageModel.html#sync",
+                      "tf": 8.333333333333332
                     },
                     "LocalForageModel.html#fetch": {
                       "ref": "LocalForageModel.html#fetch",
@@ -1954,17 +2024,19 @@ window.lunrData = {
           }
         }
       },
-      "length": 144
+      "length": 151
     },
     "corpusTokens": [
       "api",
       "augmented.j",
       "base",
+      "bound",
       "call",
       "class",
       "clear",
       "collect",
       "custom",
+      "data",
       "destroy",
       "develop",
       "document",
@@ -2005,6 +2077,7 @@ window.lunrData = {
       "localforagemodel#destroy",
       "localforagemodel#fetch",
       "localforagemodel#sav",
+      "localforagemodel#sync",
       "localforagemodel#upd",
       "lt;async&gt",
       "member",
@@ -2264,6 +2337,16 @@ window.lunrData = {
       "summary": "",
       "description": "Model",
       "body": ""
+    },
+    "LocalForageModel.html#sync": {
+      "id": "LocalForageModel.html#sync",
+      "kind": "function",
+      "title": "sync()",
+      "longname": "LocalForageModel#sync",
+      "name": "sync",
+      "tags": "LocalForageModel#sync sync",
+      "summary": "",
+      "description": "sync - Sync model data to bound localforage"
     },
     "LocalForageModel.html#fetch": {
       "id": "LocalForageModel.html#fetch",
