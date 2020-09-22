@@ -1,6 +1,6 @@
 # OS X
 .DS_Store
-src/*
+#src/*
 data
 test
 devserver.js
@@ -11,3 +11,4 @@ jsdoc
 .babelrc
 jsdoc.conf.json
 public
+localStorageTemp

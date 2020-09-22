@@ -1,16 +1,16 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   context: __dirname,
   target: "web",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'presentation-forage-models.js',
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, "dist"),
+    filename: "presentation-forage-models.js",
+    publicPath: "/dist/",
     library: "presentation-forage-models",
-    globalObject: 'this',
+    globalObject: "this",
     libraryTarget: "umd",
     umdNamedDefine: true
   },
@@ -26,17 +26,17 @@ module.exports = {
     ]
   },
   externals: {
-    'next-core-model': {
-      commonjs: 'next-core-model',
-      commonjs2: 'next-core-model',
-      amd: 'next-core-model',
-      root: 'next-core-model'
+    "next-core-model": {
+      commonjs: "next-core-model",
+      commonjs2: "next-core-model",
+      amd: "next-core-model",
+      root: "next-core-model"
     },
-    'localforage': {
-      commonjs: 'localforage',
-      commonjs2: 'localforage',
-      amd: 'localforage',
-      root: 'localforage'
+    "localforage": {
+      commonjs: "localforage",
+      commonjs2: "localforage",
+      amd: "localforage",
+      root: "localforage"
     }
   },
   stats: "errors-only",
